@@ -1,0 +1,78 @@
+{
+    "machine_info": {
+        "node": "Matthews-MacBook-Pro.local",
+        "processor": "arm",
+        "machine": "arm64",
+        "python_compiler": "Clang 15.0.0 (clang-1500.1.0.2.5)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.11.7",
+        "python_version": "3.11.7",
+        "python_build": [
+            "main",
+            "Feb  5 2024 11:29:08"
+        ],
+        "release": "23.5.0",
+        "system": "Darwin",
+        "cpu": {
+            "python_version": "3.11.7.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "ARM_8",
+            "bits": 64,
+            "count": 11,
+            "arch_string_raw": "arm64",
+            "brand_raw": "Apple M3 Pro"
+        }
+    },
+    "commit_info": {
+        "id": "31a4ba62bf792b9f7e84f6ac4d0a29cf161d7067",
+        "time": "2024-07-09T14:15:39+02:00",
+        "author_time": "2024-07-09T14:15:39+02:00",
+        "dirty": true,
+        "project": "python-profiling-workshop",
+        "branch": "main"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_play_game",
+            "fullname": "01_cprofile/bench_game_of_chance.py::test_play_game",
+            "params": null,
+            "param": null,
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 3.33995558321476e-07,
+                "max": 1.837499439716339e-05,
+                "mean": 5.155859651435809e-07,
+                "stddev": 2.1495036916492043e-07,
+                "rounds": 64342,
+                "median": 5.00003807246685e-07,
+                "iqr": 8.393544703722e-08,
+                "q1": 4.5803608372807503e-07,
+                "q3": 5.41971530765295e-07,
+                "iqr_outliers": 1883,
+                "stddev_outliers": 920,
+                "outliers": "920;1883",
+                "ld15iqr": 3.33995558321476e-07,
+                "hd15iqr": 7.079797796905041e-07,
+                "ops": 1939540.770318523,
+                "total": 0.03317383216926828,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2024-07-09T12:18:52.999595",
+    "version": "4.0.0"
+}
