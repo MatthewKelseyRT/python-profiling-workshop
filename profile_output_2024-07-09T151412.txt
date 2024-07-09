@@ -1,0 +1,18 @@
+Timer unit: 1e-09 s
+
+Total time: 0.023147 s
+File: /Users/matthewkelsey/EuroPython/python-profiling-workshop/02_line_profile/count_words.py
+Function: count_words at line 14
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    14                                           @line_profiler.profile
+    15                                           def count_words(filename):
+    16         1       1000.0   1000.0      0.0      word_counts = {}
+    17         2      35000.0  17500.0      0.2      with open(filename, "r") as file:
+    18      6133    1182000.0    192.7      5.1          for line in file:
+    19     60568    9052000.0    149.5     39.1              for word in line.split():
+    20     54436   12877000.0    236.6     55.6                  word_counts[word] = word_counts.get(word, 0) + 1
+    21         1          0.0      0.0      0.0      return word_counts
+
+  0.02 seconds - /Users/matthewkelsey/EuroPython/python-profiling-workshop/02_line_profile/count_words.py:14 - count_words
