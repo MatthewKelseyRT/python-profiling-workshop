@@ -11,6 +11,7 @@ def get_user_name(user_id: int) -> str:
     user = r.json()
     return user["name"]
 
+
 def get_user_friends(user_id: int) -> list[int]:
     r = requests.get(f"{backend_endpoint}/friends/{user_id}")
     r.raise_for_status()
@@ -22,7 +23,7 @@ def serf_social_net():
     user_id = 1
     while True:
         name = get_user_name(user_id)
-        friends  = get_user_friends(user_id)
+        friends = get_user_friends(user_id)
         user_id = random.choice(friends)
 
 
@@ -31,3 +32,5 @@ if __name__ == "__main__":
         serf_social_net()
     except KeyboardInterrupt:
         pass
+
+# do open out.svg to open the image file
