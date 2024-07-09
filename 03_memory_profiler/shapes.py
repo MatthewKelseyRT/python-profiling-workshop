@@ -2,16 +2,19 @@ import random
 
 from memory_profiler import profile
 
+
 class Point:
+    __slots__ = ["x", "y"]  # Reduces memory usage
     x: float
     y: float
 
-    def __init__(self, x:float, y:float):
+    def __init__(self, x: float, y: float):
         self.x = x
         self.y = y
 
 
 class Circle:
+    __slots__ = ["x", "y", "radius"]  # Reduces memory usage
     x: float
     y: float
     radius: float
@@ -20,6 +23,7 @@ class Circle:
         self.x = x
         self.y = y
         self.radius = r
+
 
 @profile
 def generate_scene1() -> list[Point | Circle]:
@@ -47,5 +51,4 @@ def generate_scene2() -> list[Point | Circle]:
 
 if __name__ == "__main__":
     shapes1 = generate_scene1()
-    shapes2 = generate_scene2()
-
+    # shapes2 = generate_scene2()
