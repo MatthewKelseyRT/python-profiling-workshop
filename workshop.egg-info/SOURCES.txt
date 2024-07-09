@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+workshop/misc.py
+workshop/service.py
+workshop.egg-info/PKG-INFO
+workshop.egg-info/SOURCES.txt
+workshop.egg-info/dependency_links.txt
+workshop.egg-info/requires.txt
+workshop.egg-info/top_level.txt
